@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.header {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+.header .nav {
+  padding: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header .nav__name {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  display: inline;
+  padding: 0 120px 0 0;
+}
+.header .nav__items {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header .nav__item {
+  color: #000000;
+  font-size: 18px;
+  padding: 0 40px 0 0;
+}
+.header .nav__phone {
+  color: #000000;
+  display: block;
+  margin: auto 0 0 auto;
+  font-size: 22px;
+}
+.header__logo_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 40px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background-color: #0030DA;
+  border-radius: 5px;
+}
+.header__logo .logo__item {
+  margin: auto 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.header__logo .logo__name {
+  margin: auto 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  letter-spacing: 0.09em;
+  color: #FFFFFF;
+}
+
+.about-us {
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about-us__item {
+  width: 50%;
+  min-width: 450px;
+}
+.about-us__item:first-child {
+  background-color: #365EEC;
+}
+.about-us__item:last-child {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.about-us__title {
+  color: #FFFFFF;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 120%;
+  padding: 50px 0 40px 0;
+}
+.about-us__subtitle {
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 180%;
+  padding: 10px 50px 150px 60px;
+}
+.about-us .why-us {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about-us .why-us__item {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-us .why-us__item img {
+  height: 40px;
+  padding: 0 0 0 60px;
+}
+.about-us .why-us__title {
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  color: #3A3A3A;
+  line-height: 120%;
+  padding: 50px 0 40px 0;
+}
+.about-us .why-us__subtitle {
+  font-size: 20px;
+  line-height: 160%;
+  padding: 10px 50px 10px 20px;
+  color: #3A3A3A;
+}
+
+.footer {
+  font-family: "Lato", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  padding: 80px 0 40px 0;
+}
+.footer__line {
+  width: 100%;
+  margin: 0 0 80px 0;
+  border: 1px solid #D8D8D8;
+}
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+  color: #616161;
+}
+.footer__item {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  color: #616161;
+}
+
+@media screen and (max-width: 1400px) {
+  .about-us__title {
+    font-size: 60px;
+    padding: 40px 0 30px 0;
+  }
+  .about-us__subtitle {
+    font-size: 18px;
+    padding: 10px 50px 100px 60px;
+  }
+  .about-us .why-us__title {
+    font-size: 60px;
+    padding: 40px 0 30px 0;
+  }
+  .about-us .why-us__subtitle {
+    font-size: 18px;
+    padding: 10px 50px 10px 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-us__title {
+    font-size: 50px;
+    padding: 40px 0 30px 0;
+  }
+  .about-us__subtitle {
+    font-size: 16px;
+    padding: 10px 50px 100px 40px;
+  }
+  .about-us .why-us__item img {
+    height: 35px;
+    padding: 0 0 0 40px;
+  }
+  .about-us .why-us__title {
+    font-size: 50px;
+    padding: 40px 0 30px 0;
+  }
+  .about-us .why-us__subtitle {
+    font-size: 18px;
+    padding: 10px 50px 10px 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-us {
+    display: block;
+  }
+  .about-us__item {
+    width: 100%;
+    min-width: 0;
+  }
+  .about-us__title {
+    font-size: 40px;
+    padding: 30px 0 20px 0;
+  }
+  .about-us__subtitle {
+    font-size: 16px;
+    padding: 10px 20px 50px 20px;
+  }
+  .about-us .why-us {
+    padding: 0 0 40px 0;
+  }
+  .about-us .why-us__item img {
+    height: 35px;
+    padding: 0 0 0 20px;
+  }
+  .about-us .why-us__title {
+    font-size: 40px;
+    padding: 30px 0 20px 0;
+  }
+  .about-us .why-us__subtitle {
+    padding: 10px 50px 10px 20px;
+  }
+}
