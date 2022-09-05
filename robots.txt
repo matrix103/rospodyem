@@ -1,0 +1,7 @@
+User-agent: *
+User-agent: Googlebot
+User-agent: YandexBot
+
+Disallow: /404.php
+
+Sitemap: https://rospodyem.ru/sitemap.xml

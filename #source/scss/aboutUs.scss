@@ -1,0 +1,167 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+
+.about-us{
+   font-family: 'Lato', sans-serif;
+   display: flex;
+   flex-wrap: wrap;
+   &__item{
+      width: 50%;
+      min-width: 450px;
+   }
+   &__item:first-child{
+      background-color: #365EEC;
+   }
+   &__item:last-child{
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   }
+   &__title{
+      color: #FFFFFF;
+      font-size: 65px;
+      font-weight: 700;
+      text-align: center;
+      color: #FFFFFF;
+      line-height: 120%;
+      padding: 50px 0 40px 0;
+   }
+   &__subtitle{
+      font-size: 20px;
+      color: #FFFFFF;
+      line-height: 180%;
+      padding: 10px 50px 150px 60px;
+   }
+   .why-us{
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &__item{
+         padding: 10px 0;
+         display: flex;
+         align-items: center;
+      }
+      &__item img{
+         height: 40px;
+         padding: 0 0 0 60px;
+      }
+      &__title{
+         font-size: 65px;
+         font-weight: 700;
+         text-align: center;
+         color: #3A3A3A;
+         line-height: 120%;
+         padding: 50px 0 40px 0;
+      }
+      &__subtitle{
+         font-size: 20px;
+         line-height: 160%;
+         padding: 10px 50px 10px 20px;
+         color: #3A3A3A;
+      }
+   }
+}
+
+@media screen and (max-width: 1400px){
+   .about-us{
+
+      &__title{
+         font-size: 60px;
+         padding: 40px 0 30px 0;
+      }
+      &__subtitle{
+         font-size: 18px;
+
+         padding: 10px 50px 100px 60px;
+      }
+      .why-us{
+         &__title{
+            font-size: 60px;
+            padding: 40px 0 30px 0;
+         }
+         &__subtitle{
+            font-size: 18px;
+            padding: 10px 50px 10px 20px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1200px){
+   .about-us{
+
+      &__title{
+         font-size: 50px;
+         padding: 40px 0 30px 0;
+      }
+      &__subtitle{
+         font-size: 16px;
+         padding: 10px 50px 100px 40px;
+      }
+      .why-us{
+         &__item img{
+            height: 35px;
+            padding: 0 0 0 40px;
+         }
+         &__title{
+            font-size: 50px;
+            padding: 40px 0 30px 0;
+         }
+         &__subtitle{
+            font-size: 18px;
+            padding: 10px 50px 10px 20px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 900px){
+   .about-us{
+      display: block;
+      &__item{
+         width: 100%;
+         min-width: 0;
+         
+      }
+      &__title{
+         font-size: 40px;
+         padding: 30px 0 20px 0;
+      }
+      &__subtitle{
+         font-size: 16px;
+         padding: 10px 20px 50px 20px;
+      }
+      .why-us{
+         padding: 0 0 40px 0;
+         &__item img{
+            height: 35px;
+            padding: 0 0 0 20px;
+         }
+         &__title{
+            font-size: 40px;
+            padding: 30px 0 20px 0;
+         }
+         &__subtitle{
+            padding: 10px 50px 10px 20px;
+         }
+      }
+   }
+}
+
